@@ -4,10 +4,6 @@
 	100%{opacity: 0.2;}
 }
 
-
-
-
-
 body {
 	margin: 0;
 	display: flex;
@@ -99,13 +95,14 @@ body {
 	height: 50px;
 	display: flex;
 	align-items: center;
+	margin-left: 140px;
 }
 
 .d-1-3{
 	height: 50px;
 }
 
-.numero{
+.numero-pisca{
 	display: inline-block;
 	width: 30px;
 	height: 40px;
@@ -115,7 +112,7 @@ body {
 	font-size: 25px;
 }
 
-.pisca{
+.numero-pisca{
 	animation-name: pisca;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
@@ -128,6 +125,25 @@ body {
 
 .d-1-right{
 	width: 90px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.d-1-image{
+	border: 1px solid #000;
+	background-color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+
+.d-1-image img{
+	width: 100%;
+}
+
+.d-1-image.small{
+	width: 70%;
+	font-size: 12px;
 }
 
 .d-2{

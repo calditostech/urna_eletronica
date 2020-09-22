@@ -4,6 +4,12 @@
 	100%{opacity: 0.2;}
 }
 
+@keyframes aviso--grande {
+	0%{opacity: 0.2;}
+	50%{opacity: 1;}
+	100%{opacity: 0.2;}
+}
+
 body {
 	margin: 0;
 	display: flex;
@@ -102,7 +108,7 @@ body {
 	height: 50px;
 }
 
-.numero-pisca{
+.numero-pisca {
 	display: inline-block;
 	width: 30px;
 	height: 40px;
@@ -112,7 +118,7 @@ body {
 	font-size: 25px;
 }
 
-.numero-pisca{
+.pisca{
 	animation-name: pisca;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
@@ -151,4 +157,21 @@ body {
 	font-size: 14px;
 	border-top: 2px solid #000;
 	padding-left: 10px;
+}
+
+.aviso--grande{
+	font-size: 40px;
+	font-weight: bold;
+	animation-name: aviso--grande;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.aviso--gigante{
+	font-size: 70px;
+	font-weight: bold;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
